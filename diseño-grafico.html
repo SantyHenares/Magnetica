@@ -15,10 +15,13 @@
     <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/cd33816f91.js"
       crossorigin="anonymous"
@@ -57,75 +60,44 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="assets/img/Pnglogo.png" alt="" class="img-fluid"
-          /></a>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler mt-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-izquierda"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">MAGNÉTICA</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#">Home</a></li>
-            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-            <li>
-              <a
-                class="nav-link scrollto"
-                href="https://elmundodesofia.substack.com"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a href="https://sofiaferreyra.online/blog.php"
-                >Contenido Gratuito</a
-              >
-            </li>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-            <li class="dropdown">
-              <a href="#"><span>Redes Sociales</span> </a>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.instagram.com/sofiaaa_ferreyra/?utm_medium=copy_link"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/channel/UC9L2KM-cQzJU8_2N0DQ-vLA "
-                    >Youtube</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://open.spotify.com/show/4fWLZjWRWkMEePF9f13qzJ?si=edff5fee800d42c8"
-                    >Podcast(spotify)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://twitter.com/Sofiaa_ferreyra" class="twitter"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vm.tiktok.com/ZMevG1v5c/" class="Tik Tok"
-                    >Tik Tok</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a
-                class="nav-link scrollto"
-                href="https://sofiaferreyra.online/port.html"
-                >Portfolio</a
-              >
-            </li>
-            <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
-        <!-- .navbar -->
-      </div>
+      </nav>
     </header>
     <!-- End Header -->
 
