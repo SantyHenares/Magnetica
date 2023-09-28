@@ -763,13 +763,38 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.card-body {
-  width: 50px;
-  display: flex;
-  flex-direction: row;
+.card {
+  border: none;
+  font-family: 'Monserrat', sans-serif;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  border-radius: 10px;
 }
-.card-body h5 {
-  padding-left: 15px;
+.card-text{
+  font-size: 25px;
+  font-weight: 10px;
+  line-height: 100%;
+  letter-spacing: .5px;
+}
+.card-body {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.card-body img {
+  height: 75px;
+}
+
+.card-profile {
+  margin-left: 15px;
+  line-height: 6px;
+}
+.card-title {
+  font-size: large;
+}
+.stars {
+  color: #941F20;
+  font-size: 25px;
 }
 
 .clients .swiper-pagination {
@@ -1388,11 +1413,9 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  font-family: "Open Sans", sans-serif;
   color: #313030;
   padding: 60px 0;
   overflow: hidden;
-  background-color: #F0F0F0;
 }
 
 .faq h2 {
@@ -1401,7 +1424,6 @@ section {
   margin-bottom: 20px;
   padding-bottom: 0;
   color: #635551;
-  font-family: "Raleway", sans-serif;
   text-align: center;
 }
 
@@ -1420,7 +1442,7 @@ section {
 
 .faq .faq-list li {
   padding: 30px;
-  background: hsl(0, 100%, 97%);
+  background: hsl(0, 0%, 100%);
   border-radius: 10px;
   position: relative;
   -webkit-box-shadow: 10px 12px 18px -14px rgba(0,0,0,0.75);
@@ -1679,12 +1701,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
 /* VENTANA MODAL */
 
 .pop-up{
@@ -1848,3 +1864,4 @@ z-index:1100;
         font-size: 30px;
     }
 }
+
