@@ -457,12 +457,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 45px;
+  font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 0;
-  font-family: "Monserrat";
-  color: #635551;
+  font-family: sans-serif;
+  color: #941F20;
 }
 
 .section-title p {
@@ -1416,15 +1416,6 @@ section {
   color: #313030;
   padding: 60px 0;
   overflow: hidden;
-}
-
-.faq h2 {
-  font-size: 32px;
-  font-weight: 650;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #635551;
-  text-align: center;
 }
 
 .faq .faq-list {
