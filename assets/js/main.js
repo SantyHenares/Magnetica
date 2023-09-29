@@ -295,6 +295,7 @@
     });
   });
 })();
+
 $(document).ready(function () {
   function showPopup() {
     $(".pop-up").addClass("show");
