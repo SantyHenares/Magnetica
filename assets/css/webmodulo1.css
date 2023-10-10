@@ -1,0 +1,262 @@
+
+/* Section Button */
+.section-button {
+  border: none;
+  color: #f0f0f0;
+  padding: 7px 25px;
+  background-color: #941f20;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+/* End Section Button */
+
+/* "Necesitas una web si" section  */
+.redesSociales {
+  display: flex;
+  height: 20%;
+}
+
+.redesSociales-video {
+  background-color: #ccc;
+}
+
+.redesSociales-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: start;
+  padding-left: 60px;
+}
+.redesSociales-info h1 strong {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  color: #941f20;
+}
+.redesSociales-info p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 120%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  font-size: large;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: solid 1px #941f20;
+}
+.redesSociales-info-titles:hover .circle{
+  background: #941f20;
+  color: #f0f0f0;
+  transition: all .5s;
+}
+
+.redesSociales-info-titles h5 strong {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+  color: #941f20;
+}
+.redesSociales-info-titles div p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 120%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  font-size: small;
+}
+
+@media (max-width: 1366px) {
+  .redesSociales-info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: start;
+  }
+}
+
+/* End "Necesitas una web si" section  */
+
+/* Landing pages section  */
+.packs {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+}
+.packs article {
+  margin-bottom: 100px;
+}
+.packs-image {
+  height: 35rem;
+  flex: 1;
+  background-color: #ccc;
+}
+.packs-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: start;
+  padding-left: 60px;
+}
+:root {
+  --rojo: #941f20;
+  --color-default: black;
+}
+
+/*--------------------------------------------------------------
+  # Our packs-infos Section
+--------------------------------------------------------------*/
+.packs-info {
+    padding: 5px !important;
+}
+
+.packs-info-item {
+  border-radius: 0 !important;
+  padding: 15px 40px !important;
+}
+
+.packs-info container {
+    padding: 0 !important;
+}
+
+.packs-info .packs-info-item {
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.packs-info .packs-info-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.packs-info .packs-info-item .icon i {
+  color: var(--color-default);
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.packs-info .packs-info-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -20px;
+  transition: 0.3s;
+}
+.packs-info .packs-info-item h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  padding-bottom: 8px;
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #eeeeee;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.packs-info .packs-info-item p {
+  font-family: "Montserrat";
+  line-height: 120%;
+  margin-bottom: 20px;
+  max-width: 100%;
+  font-size: large;
+}
+
+.packs-info .packs-info-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: var(--rojo);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.packs-info .packs-info-item .readmore:hover {
+  transition: all 0.5s;
+  border-radius: 20px;
+  background-color: #941f20;
+  color: #eeeeee;
+}
+
+.packs-info .packs-info-item:hover .icon:before {
+  background: var(--rojo);
+}
+
+.packs-info .packs-info-item:hover h3 {
+  border-color: var(--rojo);
+}
+
+/*--------------------------------------------------------------
+# Our Services Section
+--------------------------------------------------------------*/
+.services {
+  padding: 60px 0px;
+}
+
+.services .service-item {
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.services .service-item:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
+}
+
+.service-item img {
+  width: 100%;
+}
+
+.service-item .service-info {
+  padding: 10px 15px 5px 15px;
+}
+
+.services .service-item h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services .service-item p {
+  line-height: 10px;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.button-cargar {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background: #941f20;
+  color: #fff;
+  border: solid 1px #941f20;
+  transition: all .5s;
+}
+.button-cargar:hover{
+  background: #fff;
+  color: #941f20;
+}
+
+@media (min-width: 1000px) {
+  .services {
+    padding: 60px 300px;
+  }
+}
+

@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="" name="description" />
     <meta content="" name="keywords" />
-    <title>Magnetica</title>
+    <title>Magnetica - Servicios Web</title>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
-    <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,15 +55,58 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- -------------------------------------
+                  Santi
+    ------------------------------------- -->
+    <link rel="stylesheet" href="./assets/css/mainContact.css" />
+    <!-- -------------------------------------
+                  Santi
+      ------------------------------------- -->
+    <!-- -------------------------------------
+                  Módulo 1
+    ------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/webmodulo1.css" />
+    <!-- -------------------------------------
+                  Módulo 1
+    ------------------------------------- -->
+
+    <!-- -------------------------------------
+                  Módulo 3
+    ------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/webmodulo2.css" />
+    <!-- -------------------------------------
+                  Módulo 3
+    ------------------------------------- -->
   </head>
 
   <body>
     <!-- ======= Header ======= -->
     <header id="header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- Top bar -->
+      <div class="top-bar px-2 row">
+        <div class="icon col-3 d-flex justify-content-star">
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-tiktok"></i></a>
+          <a href=""><i class="bi bi-youtube"></i></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <h1 class="col-6">TODOS LOS PRODUCTOS GRATIS</h1>
+        <div class="icon col-3 d-flex justify-content-end">
+          <a class="rounded-0 m-0" href=""
+            ><i class="bi bi-cart-fill px-3"></i
+          ></a>
+          <a class="rounded-0" href=""
+            ><i class="bi bi-person-fill px-3"></i
+          ></a>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+      <!-- ======= navbar ======= -->
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button
-            class="navbar-toggler mt-3"
+            class="navbar-toggler my-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -74,19 +116,48 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="icon d-flex justify-content-end">
+            <a href=""><i class="bi bi-cart-fill"></i></a>
+            <a href=""><i class="bi bi-person-fill"></i></a>
+          </div>
           <div
             class="collapse navbar-collapse flex-izquierda"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
+            <ul class="navbar-nav my-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">BLOG</a>
               </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item m-0 px-2 pt-2 pb-0" href="#"
+                      >CREACION DE CONTENIDO</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item m-0 px-2 py-0" href="#"
+                      >SERVICIOS WEB</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item m-0 px-2 pt-0 pb-2" href="#"
+                      >GESTION DE REDES</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICIOS</a>
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACTO</a>
@@ -99,74 +170,535 @@
         </div>
       </nav>
     </header>
+    <!-- End navbar -->
     <!-- End Header -->
 
-    <!-- ======= ImaIni Section ======= -->
-    <div
-      id="ImaIni"
-      class="d-flex flex-column justify-content-center align-items-center"
-      style="margin-bottom: 0px"
-    ></div>
-    <!-- End ImaIni -->
-    <main></main>
+    <main>
+      <!-- ======= Banner ======= -->
+      <div
+        id="ImaIni"
+        class="d-flex flex-column justify-content-center align-items-center"
+        style="margin-bottom: 0px"
+      ></div>
+      <!-- End Banner -->
+      <!-- ======= "Necesitas una web si" section ======= -->
+      <section class="container redesSociales d-flex my-5" data-aos="fade-up">
+        <div class="row">
+          <div class="redesSociales-video col-lg-6"></div>
+          <div class="redesSociales-info col-lg-6">
+            <p>El servicio</p>
+            <h1>
+              <strong class="redesSociales-info-title"
+                >Las redes sociales tus principales aliadas</strong
+              >
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet
+            </p>
+            <div class="redesSociales-info-titles d-flex">
+              <div class="col-lg-2 pe-4 pt-2">
+                <div class="circle"></div>
+              </div>
+              <div class="col-lg-10">
+                <h5><strong>Título acá</strong></h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                </p>
+              </div>
+            </div>
+            <div class="redesSociales-info-titles d-flex">
+              <div class="col-lg-2 pe-4 pt-2">
+                <div class="circle"></div>
+              </div>
+              <div class="col-lg-10">
+                <h5><strong>Título acá</strong></h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                </p>
+              </div>
+            </div>
+            <div class="redesSociales-info-titles d-flex">
+              <div class="col-lg-2 pe-4 pt-2">
+                <div class="circle"></div>
+              </div>
+              <div class="col-lg-10">
+                <h5><strong>Título acá</strong></h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                  nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======= End "Necesitas una web si" section ======= -->
+
+      <!-- ======= Landing pages section ======= -->
+      <section class="container packs">
+        <article class="packs-artcl h-100 d-flex row" data-aos="fade-up">
+          <div class="redesSociales-video col-lg-6"></div>
+          <div class="packs-info col-lg-6">
+            <div id="packs-info" class="packs-info">
+              <container class="container">
+                <div class="col">
+                  <div class="packs-info-item position-relative mb-3">
+                    <h3 class="packs-info-title pe-4">Pack Mensual</h3>
+                    <p class="pb-5">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod tincidunt ut laoreet
+                    </p>
+                    <a href="#" class="readmore stretched-link"
+                      >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                  <!-- End packs-info Item -->
+                  <div class="packs-info-item position-relative mb-3">
+                    <h3 class="pe-4">Pack Anual</h3>
+                    <p class="pb-5">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod tincidunt ut laoreet
+                    </p>
+                    <a href="#" class="readmore stretched-link"
+                      >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                  <!-- End packs-info Item -->
+                </div>
+              </container>
+            </div>
+          </div>
+        </article>
+        <article class="packs-artcl h-100 d-flex row" data-aos="fade-up">
+          <div class="redesSociales-video col-lg-6"></div>
+          <div class="packs-info col-lg-6">
+            <div id="packs-info" class="packs-info">
+              <container class="container">
+                <div class="col">
+                  <div class="packs-info-item position-relative mb-3">
+                    <h3 class="packs-info-title pe-4">Pack Mensual</h3>
+                    <p class="pb-5">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod tincidunt ut laoreet
+                    </p>
+                    <a href="#" class="readmore stretched-link"
+                      >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                  <!-- End packs-info Item -->
+                  <div class="packs-info-item position-relative mb-3">
+                    <h3 class="pe-4">Pack Anual</h3>
+                    <p class="pb-5">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                      sed diam nonummy nibh euismod tincidunt ut laoreet
+                    </p>
+                    <a href="#" class="readmore stretched-link"
+                      >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                  </div>
+                  <!-- End packs-info Item -->
+                </div>
+              </container>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- ======= End Landing pages section ======= -->
+
+      <!-- portfolio slider -->
+      <section id="clients" class="clients">
+        <div data-aos="fade-up">
+          <h2 class="title">Portfolio</h2>
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-card">
+                  <a
+                    href="assets/img/portfolio/animales-mas-grandes-default.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="Portfolio 1"
+                  >
+                    <img
+                      src="assets/img/portfolio/animales-mas-grandes-default.jpg"
+                      alt=""
+                    />
+                    <h3 class="portfolio-title">Services</h3>
+                    <p class="portfolio-text">
+                      "With supporting text below as a natural lead-in to
+                      additional content."
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-card">
+                  <a
+                    href="assets/img/portfolio/montblanc.webp"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="Portfolio 2"
+                  >
+                    <img src="assets/img/portfolio/montblanc.webp" alt="" />
+                    <h3 class="portfolio-title">Services</h3>
+                    <p class="portfolio-text">
+                      "With supporting text below as a natural lead-in to
+                      additional content."
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="portfolio-card">
+                  <a
+                    href="assets/img/portfolio/animales_mas_grandes_del_mundo_3545_orig.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox preview-link"
+                    title="Portfolio 3"
+                  >
+                    <img
+                      src="assets/img/portfolio/animales_mas_grandes_del_mundo_3545_orig.jpg"
+                      alt=""
+                    />
+                    <h3 class="portfolio-title">Services</h3>
+                    <p class="portfolio-text">
+                      "With supporting text below as a natural lead-in to
+                      additional content."
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- fin del portfolio slider -->
+
+      <!-- Testimonios -->
+
+      <section class="testimonios-section">
+        <h1 data-aos="fade-up" class="testimonios-title">Testimonios</h1>
+        <p data-aos="fade-up">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad
+        </p>
+        <div data-aos="fade-up" class="container text-center">
+          <div class="row justify-content-center">
+            <div data-aos="fade-up" class="col-lg-4 p-5 img-container">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAB2CAMAAACeX6NpAAAADFBMVEV/f32AgH6IiYeAgXwg5uqkAAAAzklEQVR4nO3b0QqCMBiA0Zbv/84JUSw29Z9OpnHOjTHm9mUXEujjeQcPlqXc6JhFKvtR2Y/KflT2M7gyuPE1KpuoPLHy9O9xj8o9mQMqd7RvT75i5TAXq1zY83KV7VTeuRIANk1TOVKM1W5i86zKcKp/Xr0L1tYJBIQE/nQHVyquEwAAAAAAAAAAAADwj+ov+h1ZcH005cf3RoHdyifBU/UR76hyvZ+QNOXHeaMUesa6nJLqGwXVT/4Ofn6m/CrurGxvy85uGD3E62oAd/UCFQkEvUhrEUsAAAAASUVORK5CYII="
+                alt=""
+              />
+            </div>
+            <div data-aos="fade-up" class="col-lg-4 p-5 img-container">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAB2CAMAAACeX6NpAAAADFBMVEV/f32AgH6IiYeAgXwg5uqkAAAAzklEQVR4nO3b0QqCMBiA0Zbv/84JUSw29Z9OpnHOjTHm9mUXEujjeQcPlqXc6JhFKvtR2Y/KflT2M7gyuPE1KpuoPLHy9O9xj8o9mQMqd7RvT75i5TAXq1zY83KV7VTeuRIANk1TOVKM1W5i86zKcKp/Xr0L1tYJBIQE/nQHVyquEwAAAAAAAAAAAADwj+ov+h1ZcH005cf3RoHdyifBU/UR76hyvZ+QNOXHeaMUesa6nJLqGwXVT/4Ofn6m/CrurGxvy85uGD3E62oAd/UCFQkEvUhrEUsAAAAASUVORK5CYII="
+                alt=""
+              />
+            </div>
+            <div class="w-100"></div>
+
+            <div data-aos="fade-up" class="col-lg-4 p-5 img-container">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAB2CAMAAACeX6NpAAAADFBMVEV/f32AgH6IiYeAgXwg5uqkAAAAzklEQVR4nO3b0QqCMBiA0Zbv/84JUSw29Z9OpnHOjTHm9mUXEujjeQcPlqXc6JhFKvtR2Y/KflT2M7gyuPE1KpuoPLHy9O9xj8o9mQMqd7RvT75i5TAXq1zY83KV7VTeuRIANk1TOVKM1W5i86zKcKp/Xr0L1tYJBIQE/nQHVyquEwAAAAAAAAAAAADwj+ov+h1ZcH005cf3RoHdyifBU/UR76hyvZ+QNOXHeaMUesa6nJLqGwXVT/4Ofn6m/CrurGxvy85uGD3E62oAd/UCFQkEvUhrEUsAAAAASUVORK5CYII="
+                alt=""
+              />
+            </div>
+            <div data-aos="fade-up" class="col-lg-4 p-5 img-container">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAB2CAMAAACeX6NpAAAADFBMVEV/f32AgH6IiYeAgXwg5uqkAAAAzklEQVR4nO3b0QqCMBiA0Zbv/84JUSw29Z9OpnHOjTHm9mUXEujjeQcPlqXc6JhFKvtR2Y/KflT2M7gyuPE1KpuoPLHy9O9xj8o9mQMqd7RvT75i5TAXq1zY83KV7VTeuRIANk1TOVKM1W5i86zKcKp/Xr0L1tYJBIQE/nQHVyquEwAAAAAAAAAAAADwj+ov+h1ZcH005cf3RoHdyifBU/UR76hyvZ+QNOXHeaMUesa6nJLqGwXVT/4Ofn6m/CrurGxvy85uGD3E62oAd/UCFQkEvUhrEUsAAAAASUVORK5CYII="
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fin de Testimonios -->
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact mb-5 text-center">
+        <div class="container mt-2" data-aos="fade-up">
+          <div class="section-header">
+            <h2 style="font-weight: bold; color: #941f20">Contacto</h2>
+          </div>
+          <div class="row gx-lg-0 gy-4">
+            <div class="col-lg-4">
+              <div
+                class="info-container d-flex flex-column align-items-center justify-content-center"
+              >
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Ubicación:</h4>
+                    <p>Argentina</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>E-mail:</h4>
+                    <p>magnetica@gmail.com</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Cel.:</h4>
+                    <p>+54 9 3498 44-4635</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-clock flex-shrink-0"></i>
+                  <div>
+                    <h4>Open Hours:</h4>
+                    <p>Mon-Sat: 11AM - 23PM</p>
+                  </div>
+                </div>
+                <!-- End Info Item -->
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <form
+                action="send_email.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <!-- Contenido del formulario de contacto -->
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="tele"
+                      id="tele"
+                      placeholder="Tu telefono"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Tu correo"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mt-3">
+                  <div class="container mb-3">
+                    <div class="row text-start mb-1">
+                      <p>Por qué servicios te gustaria saber más:</p>
+                    </div>
+                    <div class="row text-start mb-1">
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 1"
+                            name="servicios[]"
+                            id="Servicio1"
+                          />
+                          <label class="form-check-label" for="Servicio1">
+                            Pagina Web 1
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 2"
+                            name="servicios[]"
+                            id="Servicio2"
+                          />
+                          <label class="form-check-label" for="Servicio2">
+                            Pagina Web 2
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 3"
+                            name="servicios[]"
+                            id="Servicio3"
+                          />
+                          <label class="form-check-label" for="Servicio3">
+                            Pagina Web 3
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 4"
+                            name="servicios[]"
+                            id="Servicio4"
+                          />
+                          <label class="form-check-label" for="Servicio4">
+                            Pagina Web 4
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 5"
+                            name="servicios[]"
+                            id="Servicio5"
+                          />
+                          <label class="form-check-label" for="Servicio5">
+                            Pagina Web 5
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value="Pagina Web 6"
+                            name="servicios[]"
+                            id="Servicio6"
+                          />
+                          <label class="form-check-label" for="Servicio6">
+                            Pagina Web 6
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Su mensaje a sido enviado de forma correcta. ¡Gracias!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Enviar Formulario</button>
+                </div>
+              </form>
+            </div>
+            <!-- End Contact Form -->
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container d-lg-flex py-4">
-        <div class="me-lg-auto text-center text-lg-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Sofia Ferreyra</span></strong
-            >. All Rights Reserved
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>SofiaFerreyra.inc</span>
+            </a>
+            <p>
+              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+              nada terra videa magna derita valies darta donna mare fermentum
+              iaculis eu non diam phasellus.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-          <div class="credits">
-            Designed by <a href="">Magnética Comunicación</a>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br />
+              New York, NY 535022<br />
+              United States <br /><br />
+              <strong>Phone:</strong> +1 5589 55488 55<br />
+              <strong>Email:</strong> info@example.com<br />
+            </p>
           </div>
         </div>
-        <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
-          <a href="https://twitter.com/Sofiaa_ferreyra" class="twitter"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/sofiaaa_ferreyra/"
-            class="instagram"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://vm.tiktok.com/ZMevG1v5c/" class="Tik Tok"
-            ><i class="bi bi-tiktok"></i
-          ></a>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>SofiaFerreyra.inc</span></strong
+          >. All Rights Reserved
         </div>
+        <div class="credits">Designed by SofiaFerreyra.inc</div>
       </div>
     </footer>
     <!-- End Footer -->
-
+    <!-- Boton de regreso -->
     <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
+      href="/"
+      class="back-to-top border d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    <!-- End boton de regreso -->
 
     <!-- Scripts -->
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyCXJAotGPvVGIOlxORVu9GkTYTEeI0rA1I",
-        authDomain: "magnetica-ae6ad.firebaseapp.com",
-        projectId: "magnetica-ae6ad",
-        storageBucket: "magnetica-ae6ad.appspot.com",
-        messagingSenderId: "990906413938",
-        appId: "1:990906413938:web:c8c89707d7296fe8c963eb",
-      };
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-    </script>
-    <!-- Mail -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="./assets/js/email.js"></script>
     <!-- Vendor JS Files -->
     <script src="assets/terceros/aos/aos.js"></script>
     <script src="assets/terceros/bootstrap/js/bootstrap.bundle.min.js"></script>

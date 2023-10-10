@@ -1,0 +1,246 @@
+
+/*--------------------------------------------------------------
+# Testimonios slider
+--------------------------------------------------------------*/
+.clients .title{
+  text-align: center;
+  color: #941F20;
+  margin-bottom: 70px;
+  font-size: 45px;
+}
+
+.card {
+  border: none;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+}
+.card-text{
+  font-size: 25px;
+  font-weight: 10px;
+  line-height: 100%;
+  letter-spacing: .5px;
+}
+.card-body {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.card-body img {
+  height: 75px;
+}
+
+.card-profile {
+  margin-left: 15px;
+  line-height: 6px;
+}
+.card-title {
+  font-size: large;
+}
+.stars {
+  color: #941F20;
+  font-size: 25px;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F0F0F0;
+  opacity: 1;
+  border: 1px solid #941F20;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #941F20;
+}
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq {
+  color: #313030;
+  padding: 60px 0;
+  overflow: hidden;
+}
+.faq .title {
+  text-align: center;
+  color: #941F20;
+  margin-bottom: 80px;
+  font-size: 45px;
+}
+
+.faq .faq-list {
+  padding: 0 100px;
+}
+.faq .faq-direction{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 25px;
+  
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+  color: #941F20;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 549;
+}
+
+.faq .faq-list a:hover {
+  color: #990000;
+  text-decoration: none;
+}
+
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 30px;
+  color: #ffb8a1;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0px 0px 30px;
+  font-size: 20px;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #990000;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio slider
+--------------------------------------------------------------*/
+
+.portfolio-card {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+}
+.portfolio-card:hover {
+  transition: 0.4s;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
+}
+.portfolio-card img {
+    width: 100%;
+    height: 40vh;
+}
+
+.portfolio-card .portfolio-title{
+    font-weight: bold !important ;
+    font-size: 27px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.portfolio-card .portfolio-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+
+}
+.portfolio-lightbox {
+  text-decoration: none;
+  color: #313030;
+}
+.portfolio-lightbox:hover {
+  color: #313030;
+}
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F0F0F0;
+  opacity: 1;
+  border: 1px solid #941F20;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #941F20;
+}
+
+/*--------------------------------------------------------------
+# Testimonio section
+--------------------------------------------------------------*/
+.testimonios-section {
+  text-align: center;
+}
+.testimonios-section h1 {
+  margin-top: 30px;
+  font-size: 45px;
+}
+.testimonios-title{
+  color: #941F20;
+}
+.testimonios-section p {
+  max-width: 55rem;
+  margin: auto;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.text-center img {
+  width: 100%;
+}
+@media (max-width: 5000px) {
+  .img-container{padding: 23px !important;}
+}
+

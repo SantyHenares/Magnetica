@@ -195,11 +195,11 @@
       480: {
         slidesPerView: 1,
       },
-      640: {
+      840: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      992: {
+      1092: {
         slidesPerView: 3,
         spaceBetween: 50,
       },
@@ -295,7 +295,6 @@
     });
   });
 })();
-
 $(document).ready(function () {
   function showPopup() {
     $(".pop-up").addClass("show");

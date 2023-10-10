@@ -1,0 +1,95 @@
+
+/*--------------------------------------------------------------
+# Portfolio slider
+--------------------------------------------------------------*/
+.clients .title{
+  text-align: center;
+  color: #941F20;
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+
+.portfolio-card {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+
+}
+.portfolio-card:hover {
+  transition: 0.4s;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
+}
+.portfolio-card img {
+  width: 100%;
+  height: 40vh;
+}
+.portfolio-card .portfolio-text-content {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.portfolio-card .portfolio-title{
+    font-weight: bold !important ;
+    font-size: 27px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.portfolio-card .portfolio-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.portfolio-lightbox {
+  text-decoration: none;
+  color: #313030;
+}
+.portfolio-lightbox:hover {
+  color: #313030;
+}
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #F0F0F0;
+  opacity: 1;
+  border: 1px solid #941F20;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #941F20;
+}
+
+
+
+/*--------------------------------------------------------------
+# Testimonio section en diseño grafico
+--------------------------------------------------------------*/
+.testimonios-section {
+  text-align: center;
+}
+.testimonios-section .testimonios-title {
+  font-size: 50px;
+  color: #941F20;
+}
+.testimonios-section p {
+  max-width: 55rem;
+  margin: auto;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+.text-center img {
+  width: 100%;
+}
+@media (max-width: 5000px) {
+  .img-container{padding: 30px !important;}
+}
+@media (max-width: 600px) {
+  .faq .faq-list {
+    padding: 0 !important;
+  }
+}
