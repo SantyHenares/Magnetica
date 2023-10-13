@@ -64,9 +64,9 @@ body {
 .services .service-item h3 {
   color: var(--color-default);
   font-weight: 700;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   padding-bottom: 8px;
-  font-size: 30px;
+  font-size: 25px;
   position: relative;
   display: inline-block;
   border-bottom: 4px solid #eeeeee;
@@ -87,12 +87,6 @@ body {
   border-radius: 20px;
 }
 
-.services .service-item .readmore:hover {
-  transition: all 0.9s;
-  border-radius: 20px;
-  background-color: #941f20;
-  color: #eeeeee;
-}
 
 .services .service-item:hover .icon:before {
   background: var(--rojo);
