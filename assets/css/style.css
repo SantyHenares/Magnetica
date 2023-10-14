@@ -88,7 +88,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .top-bar{
     display: none !important;
   }
@@ -209,6 +209,7 @@ h6 {
     z-index: 1;
     padding: 0;
     margin-bottom: -10px;
+    height: 100vh;
   }
   
   @media (min-width: 1024px) {
