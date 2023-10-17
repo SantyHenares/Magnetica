@@ -9,9 +9,7 @@ body {
 # Our Services Section
 --------------------------------------------------------------*/
 .service-title {
-  text-align: center;
   margin-bottom: 5rem;
-  border-bottom: 2px solid #941f20;
 }
 .service-title h2 {
   color: var(--rojo);
@@ -76,7 +74,13 @@ body {
 .services .service-item p {
   line-height: 24px;
   font-size: 20px;
-  margin-bottom: 0;
+  min-height: 50px;
+}
+
+.services .service-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .services .service-item .readmore {
