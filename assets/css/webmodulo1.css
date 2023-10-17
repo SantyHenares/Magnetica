@@ -85,8 +85,11 @@
   flex-direction: column;
   height: 20%;
 }
-.packs article {
-  margin-bottom: 100px;
+.packs .packs-artcl {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .packs-image {
   height: 35rem;
@@ -112,11 +115,6 @@
     padding: 5px !important;
 }
 
-.packs-info-item {
-  border-radius: 0 !important;
-  padding: 15px 40px !important;
-}
-
 .packs-info container {
     padding: 0 !important;
 }
@@ -126,6 +124,14 @@
   background: #fff;
   height: 100%;
   border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+  transition: all .4s;
+  cursor: pointer;
+  border-radius: 0 !important;
+}
+
+.packs-info-item:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
 }
 
 .packs-info .packs-info-item .icon {
@@ -181,13 +187,6 @@
   color: var(--rojo);
   padding: 5px 10px;
   border-radius: 20px;
-}
-
-.packs-info .packs-info-item .readmore:hover {
-  transition: all 0.5s;
-  border-radius: 20px;
-  background-color: #941f20;
-  color: #eeeeee;
 }
 
 .packs-info .packs-info-item:hover .icon:before {
