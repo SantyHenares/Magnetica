@@ -198,42 +198,59 @@ h6 {
   # Banner inicio
   --------------------------------------------------------------*/
 
-  #ImaIni {
+  .ima-ini {
     width: 100%;
     height: 100%;
-    background: url("../img/MagneticaROJA.png") center center;
-    background-color: #f0f0f0;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
     position: relative;
     z-index: 1;
     padding: 0;
     margin-bottom: -10px;
-    height: 100vh;
+    height: 100vh;    
+  }
+  
+  #ImaIni-home{
+    background: url("../img/MagneticaROJA.png") center center;
+    background-color: #F0F0F0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #ImaIni-diseñoweb{
+    background-image: url("../img/banners/banner-diseñoweb.png");
+  }
+
+  #ImaIni-redessociales{
+    background-image: url("../img/banners/Banner-redessociales.png");
+  }
+
+  #ImaIni-diseñografico{
+    background-image: url("../img/banners/banner-diseñoweb.png");
   }
   
   @media (min-width: 1024px) {
-    #ImaIni{
+    .ima-ini{
       background-attachment: fixed;
     }
   }
   
   @media (max-width: 1024px),
   (max-height: 768px) {
-    #ImaIni{
+    .ima-ini{
       margin-bottom: -150px;
       height: 50vh;
     }
   }
   
   @media (max-width: 768px) {
-    #ImaIni{
+    .ima-ini{
       height: 50vh;
     }
   }
   
   @media (max-height: 700px) {
-    #ImaIni{
+    .ima-ini{
       width: 100%;
       height: 100vh;
     }
