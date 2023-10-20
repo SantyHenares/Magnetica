@@ -17,7 +17,13 @@
 }
 
 .redesSociales-video {
-  background-color: #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redesSociales-video img {
+  width: 100%;
 }
 
 .redesSociales-info {
@@ -27,6 +33,7 @@
   align-items: start;
   padding-left: 60px;
 }
+
 .redesSociales-info h1 strong {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
@@ -77,6 +84,17 @@
   }
 }
 
+@media (max-width: 980px) {
+  .redesSociales-info {
+    padding-left: 0px;
+    margin-top: 10%;
+  }
+  .redesSociales-video img {
+    width: 100%;
+  }  
+}
+
+
 /* End "Necesitas una web si" section  */
 
 /* Landing pages section  */
@@ -91,17 +109,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.packs-image {
-  height: 35rem;
-  flex: 1;
-  background-color: #ccc;
-}
+
 .packs-info {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   align-items: start;
-  padding-left: 60px;
 }
 :root {
   --rojo: #941f20;
@@ -112,15 +125,16 @@
   # Our packs-infos Section
 --------------------------------------------------------------*/
 .packs-info {
-    padding: 5px !important;
+    padding: 5px;
 }
 
 .packs-info container {
-    padding: 0 !important;
+    padding: 0;
 }
 
 .packs-info .packs-info-item {
   padding: 40px;
+  padding-bottom: 15px;
   background: #fff;
   height: 100%;
   border-radius: 10px;
