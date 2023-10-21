@@ -221,6 +221,9 @@
 .services .service-item {
   background: #fff;
   min-width: 200px;
+  height: 350px;
+  margin: 20px;
+  min-height: 330px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
   transition: all .4s;
   cursor: pointer;
@@ -267,9 +270,8 @@
   color: #941f20;
 }
 
-@media (min-width: 1000px) {
-  .services {
-    padding: 60px 300px;
+@media (max-width: 800px) {
+  .services .service-item {
+    margin-bottom: 100px;
   }
 }
-
