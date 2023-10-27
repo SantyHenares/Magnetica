@@ -1,9 +1,6 @@
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact{
-  padding-top: 60px;
-}
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;

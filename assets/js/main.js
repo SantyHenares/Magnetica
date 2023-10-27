@@ -74,7 +74,7 @@
   /**
    * Header fixed top on scroll
    */
-  let selectHeader = select("#header");
+  let selectHeader = select(".navbar");
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop;
     let nextElement = selectHeader.nextElementSibling;
