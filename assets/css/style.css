@@ -233,7 +233,10 @@ h6 {
   #ImaIni-sobremagnetica{
     background-image: url("../img/banners/Banner-sobremagentica.png");
   }
-  
+
+  #ImaMid{
+    background-image: url("../img/banners/bannerHome2.png");
+  }
   
   @media (min-width: 1024px) {
     .ima-ini{
@@ -336,6 +339,15 @@ h6 {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.underline {
+  --color: #941f20;
+  --position: center bottom;
+  --width: 100px;
+  --height: 5px;
+  background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
+  padding-bottom: 10px;
 }
