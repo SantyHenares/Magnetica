@@ -329,7 +329,7 @@ h6 {
 }
 @media (max-width: 760px) {
   #sobre-magnetica{
-    padding: 0;
+    padding: 15px;
     padding-top: 20px;
   }
 }
