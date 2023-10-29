@@ -233,7 +233,10 @@ h6 {
   #ImaIni-sobremagnetica{
     background-image: url("../img/banners/Banner-sobremagentica.png");
   }
-  
+
+  #ImaMid{
+    background-image: url("../img/banners/bannerHome2.png");
+  }
   
   @media (min-width: 1024px) {
     .ima-ini{
