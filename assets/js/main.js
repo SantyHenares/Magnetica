@@ -238,7 +238,7 @@
   });
 
   new Swiper(".camera-slider", {
-    loop: true,
+    loop: false,
     slidesPerView: "auto",
     pagination: {
       el: ".swiper-pagination",
@@ -257,6 +257,7 @@
         spaceBetween: 30,
       },
       1092: {
+        //aca decia 3 y 50
         slidesPerView: 3,
         spaceBetween: 50,
       },

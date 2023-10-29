@@ -98,8 +98,15 @@
   }
 }
 
-.titulo-rebelde {
-  position: absolute;
-  top: -70px;
-  left: 38.5%;
+.behind-cameras-img {
+  width: 100%;
+  height: 35vh;
+}
+
+.zoom-imagen {
+  transition: transform .4s; 
+}
+
+.zoom-imagen:hover {
+  transform: scale(1.1); 
 }
