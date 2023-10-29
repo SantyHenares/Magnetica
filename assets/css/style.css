@@ -349,5 +349,5 @@ h6 {
   --width: 100px;
   --height: 5px;
   background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
