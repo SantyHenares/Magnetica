@@ -39,7 +39,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     font-size: 18px;
-    height: 31.5vh;
+    height: 25vh;
 }
 .portfolio-lightbox {
   text-decoration: none;
@@ -66,7 +66,7 @@
 }
 @media (min-width: 1400px) {
   .portfolio-card .portfolio-text {
-    height: 19vh;
+    height: 15vh;
   }
 }
 
@@ -96,4 +96,10 @@
   .faq .faq-list {
     padding: 0 !important;
   }
+}
+
+.titulo-rebelde {
+  position: absolute;
+  top: -70px;
+  left: 38.5%;
 }
