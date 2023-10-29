@@ -16,7 +16,7 @@
 }
 .portfolio-card:hover {
   transition: 0.4s;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
 }
 .portfolio-card img {
   width: 100%;
