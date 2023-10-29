@@ -237,6 +237,32 @@
     },
   });
 
+  new Swiper(".camera-slider", {
+    loop: true,
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      840: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1092: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+  
   /**
    * Testimonials slider
    */
