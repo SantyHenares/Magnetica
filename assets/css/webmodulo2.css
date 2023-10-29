@@ -39,6 +39,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     font-size: 18px;
+    height: 31.5vh;
 }
 .portfolio-lightbox {
   text-decoration: none;
@@ -63,8 +64,11 @@
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #941F20;
 }
-
-
+@media (min-width: 1400px) {
+  .portfolio-card .portfolio-text {
+    height: 19vh;
+  }
+}
 
 /*--------------------------------------------------------------
 # Testimonio section en diseño grafico
