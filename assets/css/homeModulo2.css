@@ -16,7 +16,7 @@
   border-radius: 10px;  
 }
 .card-text{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 10px;
   line-height: 100%;
   letter-spacing: .5px;
@@ -137,7 +137,7 @@
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0px 0px 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .faq .faq-list .icon-show {
