@@ -352,7 +352,7 @@ h6 {
   font-weight: bold;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .underline {
@@ -361,5 +361,5 @@ h6 {
   --width: 100px;
   --height: 5px;
   background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
