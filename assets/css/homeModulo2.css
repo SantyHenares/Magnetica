@@ -165,4 +165,22 @@
     padding: 0;
   }
 }
+.behind-cameras-img {
+  width: 100%;
+  height: 32vh;
+  overflow: hidden;
+}
 
+.behind-cameras-img img {
+  width: 100%;
+  height: 32vh;
+  overflow: hidden;
+}
+
+.zoom-imagen {
+  transition: transform .3s; 
+}
+
+.zoom-imagen:hover {
+  transform: scale(1.25); 
+}
