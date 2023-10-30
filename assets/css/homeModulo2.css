@@ -111,14 +111,13 @@
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-size: 16px;
   line-height: 24px;
   padding: 0 30px;
   outline: none;
   cursor: pointer;
   color: #941F20;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 549;
 }
 
