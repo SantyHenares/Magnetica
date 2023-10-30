@@ -351,8 +351,8 @@ h6 {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .underline {
@@ -361,5 +361,11 @@ h6 {
   --width: 100px;
   --height: 5px;
   background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .titles-h1{
+    font-size: 2rem;
+  }
 }
