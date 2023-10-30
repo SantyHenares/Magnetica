@@ -184,3 +184,8 @@
 .zoom-imagen:hover {
   transform: scale(1.25); 
 }
+
+.behind-cameras-slider {
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
