@@ -238,7 +238,44 @@
   });
 
   new Swiper(".camera-slider", {
+    speed: 400,
     loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 1,
+      },
+      840: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1092: {
+        //aca decia 3 y 50
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+
+  new Swiper(".testimonios-home-slider", {
+    speed: 400,
+    loop: false,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     slidesPerView: "auto",
     pagination: {
       el: ".swiper-pagination",
