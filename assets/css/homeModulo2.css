@@ -56,10 +56,19 @@
   background-color: #F0F0F0;
   opacity: 1;
   border: 1px solid #941F20;
+  margin-bottom: 4vh;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #941F20;
+}
+
+.espaciado {
+  margin-top: 15vh;
+}
+
+.behind-cameras-slider {
+  margin-bottom: 20vh;
 }
 
 
@@ -183,9 +192,4 @@
 
 .zoom-imagen:hover {
   transform: scale(1.25); 
-}
-
-.behind-cameras-slider {
-  margin-top: 10vh;
-  margin-bottom: 20vh;
 }

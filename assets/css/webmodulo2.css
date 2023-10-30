@@ -59,6 +59,7 @@
   background-color: #F0F0F0;
   opacity: 1;
   border: 1px solid #941F20;
+  margin-bottom: 4vh;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
@@ -68,6 +69,13 @@
   .portfolio-card .portfolio-text {
     height: 13vh;
   }
+}
+.espaciado {
+  margin-top: 15vh;
+}
+
+.behind-cameras-slider {
+  margin-bottom: 20vh;
 }
 
 /*--------------------------------------------------------------
@@ -119,7 +127,3 @@
   transform: scale(1.05); 
 }
 
-.behind-cameras-slider {
-  margin-top: 10vh;
-  margin-bottom: 20vh;
-}
