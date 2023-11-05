@@ -91,6 +91,79 @@
   </head>
 
   <body>
+    <!-- Pop Up -->
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-6 popup-imagen"></div>
+            <div class="col-6 py-5">
+              <div class="modal-body">
+                <h1 class="titles-h1 text-start fs-3 mb-5">
+                  Se parte de nuestra comunidad Magnética.
+                </h1>
+                <div class="mb-5">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name-popup"
+                      placeholder="Nombre"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-popup"
+                    placeholder="Tu correo"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Quieres recibir contenido gratis en tu correo?
+                  </label>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn popup-button">
+                  Registrarme
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary popup-close"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header">
       <!-- Top bar -->
@@ -991,7 +1064,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <!-- Firebase -->
-    <script type="module">
+    <!-- <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
       import {
@@ -1072,6 +1145,6 @@
           );
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
