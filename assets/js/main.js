@@ -263,7 +263,7 @@
       },
     },
   });
-  
+
   /**
    * Testimonials slider
    */

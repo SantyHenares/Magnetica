@@ -18,14 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'magnetica.check@gmail.com'; // Reemplaza con tu dirección de correo
-        $mail->Password = 'jben duyz niur rsdu'; // Reemplaza con tu contraseña de correo
+        $mail->Username = 'santiagodhenares@gmail.com'; // Reemplaza con tu dirección de correo
+        $mail->Password = 'ughg fzbn fxyb jiec'; // Reemplaza con tu contraseña de correo
         $mail->SMTPSecure = 'tls'; // Usa 'ssl' si es necesario
         $mail->Port = 587; // Puerto SMTP, ajusta según tu configuración
 
         // Configuración del remitente
         $mail->setFrom($email, $name);
-        $mail->addAddress('magnetica.check@gmail.com'); // Dirección del destinatario
+        $mail->addAddress('santiagodhenares@gmail.com'); // Dirección del destinatario
 
         // Contenido del correo
         $mail->isHTML(true);

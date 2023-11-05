@@ -369,3 +369,11 @@ h6 {
     font-size: 2rem;
   }
 }
+
+.popup-class {
+  border-top: 25px solid #941F20;
+  border-bottom: 25px solid #941f20;
+}
+.title-class{
+  text-align: center;
+}
