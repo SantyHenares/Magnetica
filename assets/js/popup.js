@@ -1,63 +1,54 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const firebaseConfig = {
-    apiKey: "AIzaSyAuC31nB2XKL88CDC1oVK_n0eWqwBV0uwA",
-    authDomain: "magnetica-database.firebaseapp.com",
-    projectId: "magnetica-database",
-    storageBucket: "magnetica-database.appspot.com",
-    messagingSenderId: "92080819795",
-    appId: "1:92080819795:web:2754bdba2e78eafb1040a6",
-    measurementId: "G-46N8WNR627",
-  };
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+} from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+const firebaseConfig = {
+  apiKey: "AIzaSyAuC31nB2XKL88CDC1oVK_n0eWqwBV0uwA",
+  authDomain: "magnetica-database.firebaseapp.com",
+  projectId: "magnetica-database",
+  storageBucket: "magnetica-database.appspot.com",
+  messagingSenderId: "92080819795",
+  appId: "1:92080819795:web:2754bdba2e78eafb1040a6",
+  measurementId: "G-46N8WNR627",
+};
 
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const analytics = getAnalytics(app);
 
-  Swal.fire({
-    title: "Se parte de nuestra comunidad Magnética.",
-    color: "#941F20",
-    html: `<input type="text" id="name-popup" class="swal2-input" placeholder="Nombre">
-                <input type="email" id="email-popup" class="swal2-input" placeholder="Email">`,
-    customClass: {
-      title: "title-class",
-      popup: "popup-class",
-    },
-    padding: "40px",
-    inputAttributes: {
-      autocapitalize: "off",
-    },
-    showCancelButton: true,
-    confirmButtonText: "Enviar suscripción",
-    confirmButtonColor: "#941F20",
-    showLoaderOnConfirm: true,
-    preConfirm: () => {
-      const name = Swal.getPopup().querySelector("#name-popup").value;
-      const email = Swal.getPopup().querySelector("#email-popup").value;
-      if (!name || !email) {
+function guardarDatos() {
+  const name = document.getElementById("name-popup").value;
+  const email = document.getElementById("email-popup").value;
+  const today = new Date();
+  const day = today.getDate();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+
+  const fechaHoy = `${day < 10 ? "0" + day : day}-${
+    month < 10 ? "0" + month : month
+  }-${year}`;
+
+  if (!name || !email) {
+    alert("Completa ambos campos");
+  } else {
+    const datos = {
+      nombre: name,
+      email: email,
+      fecha: fechaHoy,
+    };
+    return addDoc(collection(db, "Email-registrados"), datos)
+      .then((docRef) => {
+        return { name: name, email: email };
+      })
+      .catch((error) => {
         Swal.showValidationMessage(
-          `Por favor, ingresa un nombre y un correo electrónico`
+          `Error al guardar los datos en Firebase: ${error}`
         );
-      } else {
-        const datos = {
-          nombre: name,
-          email: email,
-        };
-        return addDoc(collection(db, "usuarios"), datos)
-          .then((docRef) => {
-            return { name: name, email: email };
-          })
-          .catch((error) => {
-            Swal.showValidationMessage(
-              `Error al guardar los datos en Firebase: ${error}`
-            );
-          });
-      }
-    },
-  }).then((result) => {
-    Swal.fire(
-      `
-          Nombre: ${result.value.name}
-          Email: ${result.value.email}
-        `.trim()
-    );
-  });
-});
+      });
+  }
+}

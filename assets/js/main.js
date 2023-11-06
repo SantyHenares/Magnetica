@@ -353,6 +353,7 @@
     });
   });
 })();
+
 $(document).ready(function () {
   function showPopup() {
     $(".pop-up").addClass("show");
@@ -367,4 +368,10 @@ $(document).ready(function () {
   $(".btn-abrir").click(showPopup);
 
   setTimeout(showPopup, 12000);
+});
+
+// Abrir Popup al iniciar pagina
+
+$(window).on("load", function () {
+  $("#MyModal").modal("show");
 });

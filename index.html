@@ -92,20 +92,9 @@
 
   <body>
     <!-- Pop Up -->
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="MyModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -113,8 +102,8 @@
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="row">
-            <div class="col-6 popup-imagen"></div>
-            <div class="col-6 py-5">
+            <div class="col-lg-6 popup-imagen rounded-start"></div>
+            <div class="col-12 col-lg-6 py-5">
               <div class="modal-body">
                 <h1 class="titles-h1 text-start fs-3 mb-5">
                   Se parte de nuestra comunidad Magnética.
@@ -148,7 +137,7 @@
                 </div>
               </div>
               <div class="modal-footer d-flex justify-content-center">
-                <button type="button" class="btn popup-button">
+                <button type="button" id="btn-popup" class="btn popup-button">
                   Registrarme
                 </button>
                 <button
@@ -1064,7 +1053,7 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <!-- Firebase -->
-    <!-- <script type="module">
+    <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
       import {
@@ -1088,63 +1077,40 @@
       const db = getFirestore(app);
       const analytics = getAnalytics(app);
 
-      Swal.fire({
-        title: "Se parte de nuestra comunidad Magnética.",
-        html: `<input type="text" id="name-popup" class="swal2-input" placeholder="Nombre">
-        <input type="email" id="email-popup" class="swal2-input" placeholder="Email">`,
-        customClass: {
-          title: "title-class",
-          popup: "popup-class",
-        },
-        padding: "40px",
-        inputAttributes: {
-          autocapitalize: "off",
-        },
-        showCancelButton: true,
-        confirmButtonText: "Enviar suscripción",
-        confirmButtonColor: "#941F20",
-        showLoaderOnConfirm: true,
-        preConfirm: () => {
-          const name = Swal.getPopup().querySelector("#name-popup").value;
-          const email = Swal.getPopup().querySelector("#email-popup").value;
-          const today = new Date();
-          const day = today.getDate();
-          const month = today.getMonth() + 1; // Los meses comienzan en 0, por lo que se suma 1
-          const year = today.getFullYear();
+      function guardarDatos() {
+        const name = document.getElementById("name-popup").value;
+        const email = document.getElementById("email-popup").value;
+        const today = new Date();
+        const day = today.getDate();
+        const month = today.getMonth() + 1;
+        const year = today.getFullYear();
 
-          const fechaHoy = `${day < 10 ? "0" + day : day}-${
-            month < 10 ? "0" + month : month
-          }-${year}`;
+        const fechaHoy = `${day < 10 ? "0" + day : day}-${
+          month < 10 ? "0" + month : month
+        }-${year}`;
 
-          if (!name || !email) {
-            Swal.showValidationMessage(`Complete ambos campos`);
-          } else {
-            const datos = {
-              nombre: name,
-              email: email,
-              fecha: fechaHoy,
-            };
-            return addDoc(collection(db, "Email-registrados"), datos)
-              .then((docRef) => {
-                return { name: name, email: email };
-              })
-              .catch((error) => {
-                Swal.showValidationMessage(
-                  `Error al guardar los datos en Firebase: ${error}`
-                );
-              });
-          }
-        },
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            `
-      Nombre: ${result.value.name}
-      Email: ${result.value.email}
-    `.trim()
-          );
+        if (!name || !email) {
+          alert("Completa ambos campos");
+        } else {
+          const datos = {
+            nombre: name,
+            email: email,
+            fecha: fechaHoy,
+          };
+          return addDoc(collection(db, "Email-registrados"), datos)
+            .then((docRef) => {
+              $("#MyModal").modal("hide");
+              return { name: name, email: email };
+            })
+            .catch((error) => {
+              Swal.showValidationMessage(
+                `Error al guardar los datos en Firebase: ${error}`
+              );
+            });
         }
-      });
-    </script> -->
+      }
+      const registrarmeBtn = document.getElementById("btn-popup");
+      registrarmeBtn.addEventListener("click", guardarDatos);
+    </script>
   </body>
 </html>
