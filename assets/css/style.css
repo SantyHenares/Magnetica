@@ -369,3 +369,55 @@ h6 {
     font-size: 2rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Pop-up
+--------------------------------------------------------------*/
+
+.popup-class {
+  border-top: 25px solid #941F20;
+  border-bottom: 25px solid #941f20;
+}
+.title-class{
+  text-align: center;
+}
+
+.popup-imagen{
+  background-image: url("../img/Pop-up.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.popup-button{
+  font-size: 16px;
+  color: #fff;
+  background-color: #941f20;
+  padding: 5px 2rem 5px 2rem;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7C131D;
+}
+
+.popup-close{
+  font-size: 16px;
+  padding: 5px 2rem 5px 2rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-body{
+  padding: 0 4rem 3rem 4rem;
+}
+
+@media (max-width: 992px) {
+  .popup-imagen{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-body{
+    padding: 25px;
+  }
+}

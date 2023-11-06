@@ -58,7 +58,12 @@
       href="assets/terceros/swiper/swiper-bundle.min.css"
       rel="stylesheet"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- -------------------------------------
@@ -86,6 +91,68 @@
   </head>
 
   <body>
+    <!-- Pop Up -->
+    <div
+      class="modal fade"
+      id="MyModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-lg-6 popup-imagen rounded-start"></div>
+            <div class="col-12 col-lg-6 py-5">
+              <div class="modal-body">
+                <h1 class="titles-h1 text-start fs-3 mb-5">
+                  Se parte de nuestra comunidad Magnética.
+                </h1>
+                <div class="mb-5">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name-popup"
+                      placeholder="Nombre"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email-popup"
+                    placeholder="Tu correo"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Quieres recibir contenido gratis en tu correo?
+                  </label>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <button type="button" id="btn-popup" class="btn popup-button">
+                  Registrarme
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary popup-close"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header">
       <!-- Top bar -->
@@ -944,7 +1011,68 @@
     <script src="assets/terceros/glightbox/js/glightbox.min.js"></script>
     <script src="assets/terceros/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/terceros/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!-- Firebase -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAuC31nB2XKL88CDC1oVK_n0eWqwBV0uwA",
+        authDomain: "magnetica-database.firebaseapp.com",
+        projectId: "magnetica-database",
+        storageBucket: "magnetica-database.appspot.com",
+        messagingSenderId: "92080819795",
+        appId: "1:92080819795:web:2754bdba2e78eafb1040a6",
+        measurementId: "G-46N8WNR627",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      const analytics = getAnalytics(app);
+
+      function guardarDatos() {
+        const name = document.getElementById("name-popup").value;
+        const email = document.getElementById("email-popup").value;
+        const today = new Date();
+        const day = today.getDate();
+        const month = today.getMonth() + 1;
+        const year = today.getFullYear();
+
+        const fechaHoy = `${day < 10 ? "0" + day : day}-${
+          month < 10 ? "0" + month : month
+        }-${year}`;
+
+        if (!name || !email) {
+          alert("Completa ambos campos");
+        } else {
+          const datos = {
+            nombre: name,
+            email: email,
+            fecha: fechaHoy,
+          };
+          return addDoc(collection(db, "Email-registrados"), datos)
+            .then((docRef) => {
+              $("#MyModal").modal("hide");
+              return { name: name, email: email };
+            })
+            .catch((error) => {
+              Swal.showValidationMessage(
+                `Error al guardar los datos en Firebase: ${error}`
+              );
+            });
+        }
+      }
+      const registrarmeBtn = document.getElementById("btn-popup");
+      registrarmeBtn.addEventListener("click", guardarDatos);
+    </script>
   </body>
 </html>
