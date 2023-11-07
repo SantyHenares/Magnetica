@@ -1,4 +1,3 @@
-
 /* Section Button */
 .section-button {
   border: none;
@@ -22,9 +21,6 @@
   justify-content: center;
   align-items: center;
 }
-.redesSociales-video img {
-  width: 100%;
-}
 
 .redesSociales-info {
   display: flex;
@@ -34,30 +30,36 @@
   padding-left: 60px;
 }
 
-.redesSociales-info h1 strong {
-  font-size: 40px;
+.redesSociales-info .redesSociales-info-title {
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 20px;
   color: #941f20;
 }
 .redesSociales-info p {
   font-family: "Montserrat", sans-serif;
   line-height: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   max-width: 100%;
   font-size: large;
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #f0f0f0;
-  border: solid 1px #941f20;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 50px;
+  color: #941f20;
 }
 .redesSociales-info-titles:hover .circle{
-  background: #941f20;
   color: #f0f0f0;
+  background: #941f20;
   transition: all .5s;
 }
 
@@ -221,7 +223,7 @@
 .services .service-item {
   background: #fff;
   min-width: 200px;
-  height: 350px;
+  max-height: 400px;
   margin: 20px;
   min-height: 330px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
