@@ -525,9 +525,11 @@
                     data-gallery="testimonioGallery"
                     class="portfolio-lightbox preview-link"
                   >
-                    <img src="assets/img/testimonios/Testimonio-FrancoMai.png" 
-                    class="zoom-imagen"
-                    alt="">
+                    <img
+                      src="assets/img/testimonios/Testimonio-FrancoMai.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
@@ -538,22 +540,26 @@
                     data-gallery="testimonioGallery"
                     class="portfolio-lightbox preview-link"
                   >
-                    <img src="assets/img/testimonios/TestimonioCarenOrtiz.png" 
-                    class="zoom-imagen" 
-                    alt="">
+                    <img
+                      src="assets/img/testimonios/TestimonioCarenOrtiz.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="behind-cameras-img">
                   <a
-                  href="https://www.youtube.com/embed/R_HynDfavIk?si=2MHO8cKjTUtn12ID"
-                  data-gallery="testimonioGallery"
-                  class="portfolio-lightbox preview-link"
+                    href="https://www.youtube.com/embed/R_HynDfavIk?si=2MHO8cKjTUtn12ID"
+                    data-gallery="testimonioGallery"
+                    class="portfolio-lightbox preview-link"
                   >
-                    <img src="assets/img/testimonios/Testimonio-Delia.png" 
-                    class="zoom-imagen" 
-                    alt="">
+                    <img
+                      src="assets/img/testimonios/Testimonio-Delia.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
@@ -564,9 +570,11 @@
                     data-gallery="testimonioGallery"
                     class="portfolio-lightbox preview-link"
                   >
-                    <img src="assets/img/testimonios/Testimonio-FrancoMai.png" 
-                    class="zoom-imagen"
-                    alt="">
+                    <img
+                      src="assets/img/testimonios/Testimonio-FrancoMai.png"
+                      class="zoom-imagen"
+                      alt=""
+                    />
                   </a>
                 </div>
               </div>
@@ -1025,13 +1033,13 @@
       } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
       const firebaseConfig = {
-        apiKey: "AIzaSyAuC31nB2XKL88CDC1oVK_n0eWqwBV0uwA",
-        authDomain: "magnetica-database.firebaseapp.com",
-        projectId: "magnetica-database",
-        storageBucket: "magnetica-database.appspot.com",
-        messagingSenderId: "92080819795",
-        appId: "1:92080819795:web:2754bdba2e78eafb1040a6",
-        measurementId: "G-46N8WNR627",
+        apiKey: "AIzaSyCUhEwQZBsJy2cQuDYONIOuGG2dR8CwQjg",
+        authDomain: "magnetica-comunicacion.firebaseapp.com",
+        projectId: "magnetica-comunicacion",
+        storageBucket: "magnetica-comunicacion.appspot.com",
+        messagingSenderId: "381110472660",
+        appId: "1:381110472660:web:1a729e2e225472a52b1041",
+        measurementId: "G-PZCDP5EKLK",
       };
 
       // Initialize Firebase
@@ -1047,9 +1055,9 @@
         const month = today.getMonth() + 1;
         const year = today.getFullYear();
 
-        const fechaHoy = `${day < 10 ? "0" + day : day}-${
-          month < 10 ? "0" + month : month
-        }-${year}`;
+        const fechaHoy = `${year}-${month < 10 ? "0" + month : month}-${
+          day < 10 ? "0" + day : day
+        }`;
 
         if (!name || !email) {
           alert("Completa ambos campos");
@@ -1057,9 +1065,8 @@
           const datos = {
             nombre: name,
             email: email,
-            fecha: fechaHoy,
           };
-          return addDoc(collection(db, "Email-registrados"), datos)
+          return addDoc(collection(db, fechaHoy), datos)
             .then((docRef) => {
               $("#MyModal").modal("hide");
               return { name: name, email: email };
