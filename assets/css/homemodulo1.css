@@ -30,6 +30,12 @@ body {
   background: #fff;
   height: 100%;
   border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
+  transition: all .4s;
+}
+
+.services .service-item:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
 }
 
 .services .service-item .icon {
