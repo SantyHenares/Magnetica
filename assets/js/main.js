@@ -175,41 +175,6 @@
   /**
    * Clients Slider
    */
-  new Swiper(".clients-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-      },
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      840: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1092: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
-    },
-  });
 
   new Swiper(".portfolio-slider", {
     speed: 400,
@@ -229,12 +194,16 @@
         slidesPerView: 1,
       },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 10,
       },
       600: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 10,
+      },
+      770:{
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
       840: {
         slidesPerView: 2,
@@ -322,80 +291,10 @@
   });
 
   /**
-   * Testimonials slider
-   */
-  new Swiper(".testimonials-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener("load", () => {
-    let portfolioContainer = select(".portfolio-container");
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: ".portfolio-item",
-        layoutMode: "fitRows",
-      });
-
-      let portfolioFilters = select("#portfolio-flters li", true);
-
-      on(
-        "click",
-        "#portfolio-flters li",
-        function (e) {
-          e.preventDefault();
-          portfolioFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
-
-          portfolioIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          portfolioIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
-    }
-  });
-
-  /**
    * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper(".portfolio-details-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
   });
 
   /**
