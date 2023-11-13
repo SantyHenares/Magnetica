@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.gif img {
+  width: 500px;
+}
+
 .redesSociales-info {
   display: flex;
   flex-direction: column;
@@ -121,6 +125,61 @@
 :root {
   --rojo: #941f20;
   --color-default: black;
+}
+
+.packs-info .packs-info-item .descuento {
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  left: 600px;
+}
+
+@media (max-width: 1366px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 500px;
+  }
+}
+
+@media (max-width: 1192px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 400px;
+  }
+}
+
+@media (max-width: 940px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 650px;
+  }
+}
+
+@media (max-width: 766px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 460px;
+  }
+}
+
+@media (max-width: 536px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 450px;
+  }
+}
+
+@media (max-width: 350px) {
+  .packs-info .packs-info-item .descuento {
+    position: absolute;
+    top: -30px;
+    left: 240px;
+  }
 }
 
 /*--------------------------------------------------------------
