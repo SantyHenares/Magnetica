@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Contenido del correo
         $mail->isHTML(true);
         $mail->Subject = 'Solicitud Presupuesto';
-        $mail->Body = '<html><body><p>Contacto: ' . $name . ' - Celular:' . $tele . '</p><p>Solitud de Presupuesto de:' . $selectedServices . '</p><p>Correo:' . $email . '</p></body></html>';
+        $mail->Body = '<html><body><p>Contacto: ' . $name . ' - Celular: ' . $tele . '</p><p>Solitud de Presupuesto de: ' . $selectedServices . '</p><p>Correo: ' . $email . '</p></body></html>';
 
         $mail->send();
         echo "OK";
