@@ -48,8 +48,8 @@
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: #f0f0f0;
   display: flex;
@@ -60,7 +60,9 @@
   transition: all 0.3s ease-in-out;
   font-size: 50px;
   color: #941f20;
+  border: 4px solid #941f20;
 }
+
 .redesSociales-info-titles:hover .circle{
   color: #f0f0f0;
   background: #941f20;
