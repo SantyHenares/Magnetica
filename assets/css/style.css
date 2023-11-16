@@ -232,6 +232,8 @@ h6 {
 
   #ImaIni-sobremagnetica{
     background-image: url("../img/banners/Banner-sobremagentica.png");
+    background-repeat: no-repeat;
+    background-position: center 40px;
   }
 
   #ImaMid{
@@ -248,6 +250,12 @@ h6 {
   (max-height: 768px) {
     .ima-ini{
       margin-bottom: -150px;
+    }
+  }
+
+  @media (max-width: 1024px){
+    #ImaIni-sobremagnetica{
+      background-position: center 0px;
     }
   }
 
