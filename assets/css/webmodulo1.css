@@ -175,9 +175,6 @@
     top: -30px;
     left: 450px;
   }
-  .packs-info-item {
-    margin: 100px;
-  }
 }
 
 @media (max-width: 350px) {
