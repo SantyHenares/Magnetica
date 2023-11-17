@@ -48,8 +48,8 @@
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: #f0f0f0;
   display: flex;
@@ -60,7 +60,9 @@
   transition: all 0.3s ease-in-out;
   font-size: 50px;
   color: #941f20;
+  border: 4px solid #941f20;
 }
+
 .redesSociales-info-titles:hover .circle{
   color: #f0f0f0;
   background: #941f20;
@@ -93,6 +95,7 @@
 @media (max-width: 980px) {
   .redesSociales-info {
     padding-left: 0px;
+    padding: 0px 50px;
     margin-top: 10%;
   }
   .redesSociales-video img {
@@ -282,12 +285,13 @@
 .services .service-item {
   background: #fff;
   min-width: 200px;
-  max-height: 400px;
+  max-height: 600px;
   margin: 20px;
   min-height: 330px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
   transition: all .4s;
   cursor: pointer;
+  color: black;
 }
 
 .services .service-item:hover {
@@ -334,6 +338,7 @@
 
 @media (max-width: 800px) {
   .services .service-item {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+    min-height: 550px;
   }
 }
