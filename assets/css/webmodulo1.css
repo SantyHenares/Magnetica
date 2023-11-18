@@ -169,22 +169,16 @@
   }
 }
 
-@media (max-width: 536px) {
+@media (max-width: 576px) {
   .packs-info .packs-info-item .descuento {
-    position: absolute;
-    top: -30px;
-    left: 450px;
+    position: static;
+    width: 90px;
+    height: 90px;
+  }
+  .packs-info .packs-info-item div {
+    display: flex;
   }
 }
-
-@media (max-width: 350px) {
-  .packs-info .packs-info-item .descuento {
-    position: absolute;
-    top: -30px;
-    left: 240px;
-  }
-}
-
 /*--------------------------------------------------------------
   # Our packs-infos Section
 --------------------------------------------------------------*/
