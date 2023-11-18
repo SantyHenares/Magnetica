@@ -12,11 +12,6 @@
   --color-secondary: #F0F0F0;
 }
 
-/* Smooth scroll behavior */
-:root {
-  scroll-behavior: smooth;
-}
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -44,7 +39,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
   font-weight: bold;
 }
 
@@ -149,14 +143,16 @@ h6 {
 
   .dropdown-menu{
     background-color: rgba(255, 255, 255);
-  }
+    --bs-dropdown-link-active-bg: rgba(255, 255, 255) ;
 
+  }
   .dropdown-item{
     color: #941F20 !important;
   }
 
   .dropdown-menu a{
     font-size: 20px;
+    border-radius: 5px;
   }
   
   @media (min-width: 992px) {
